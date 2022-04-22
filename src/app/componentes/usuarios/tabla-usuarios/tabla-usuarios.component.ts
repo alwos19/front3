@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../models/usuario';
 import { Observable } from 'rxjs';
+import {
+  NgbdSortableHeader,
+  SortEvent,
+} from '../../../ng-bootstrap/sortable-header.directive';
+
 
 @Component({
   selector: 'app-tabla-usuarios',
@@ -9,7 +14,7 @@ import { Observable } from 'rxjs';
 })
 export class TablaUsuariosComponent implements OnInit {
 
-  usuarios$: Observable<Usuario[]>;
+  // usuarios$: Observable<Usuario[]>;
   Usuarios: any = [];
   listUsuarios = false;
   error = '';

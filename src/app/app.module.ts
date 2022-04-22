@@ -13,6 +13,7 @@ import { UsuariosModule } from './componentes/usuarios/usuarios.module';
     BrowserModule,
     AppRoutingModule,
     UsuariosModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
