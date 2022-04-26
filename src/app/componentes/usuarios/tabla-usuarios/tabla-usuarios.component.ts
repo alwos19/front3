@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../models/usuario';
 import { Observable } from 'rxjs';
-import {
-  NgbdSortableHeader,
-  SortEvent,
-} from '../../../ng-bootstrap/sortable-header.directive';
+// import {
+//   NgbdSortableHeader,
+//   SortEvent,
+// } from '../../../ng-bootstrap/sortable-header.directive';
 
 
 @Component({

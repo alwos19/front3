@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/usuarios/tabla-usuarios',
+    redirectTo: '/home/solicitudes',
     pathMatch: 'full',
   },
 
@@ -15,20 +15,20 @@ const routes: Routes = [
     // component: ContentLayoutComponent,
     // /* canActivate: [AuthGuard], */
     // children: [
-    //   {
-    //     path: 'home',
-    //     loadChildren: () =>
-    //       import('./modules/solicitudes/solicitudes.module').then(
-    //         (m) => m.SolicitudesModule
-    //       ),
-    //   },
       {
-        path: 'usuarios',
+        path: 'home',
         loadChildren: () =>
-          import('./componentes/usuarios/usuarios.module').then(
-            (m) => m.UsuariosModule
+          import('./componentes/solicitudes/solicitudes.module').then(
+            (m) => m.SolicitudesModule
           ),
       },
+      // {
+      //   path: 'usuarios',
+      //   loadChildren: () =>
+      //     import('./componentes/usuarios/usuarios.module').then(
+      //       (m) => m.UsuariosModule
+      //     ),
+      // },
       // {
       //   path: 'estados',
       //   loadChildren: () =>
@@ -45,7 +45,7 @@ const routes: Routes = [
   //     import('./core/auth/auth.module').then((m) => m.AuthModule),
   // },
   // Fallback when no prior routes is matched
-  { path: '**', redirectTo: '/usuarios/tabla-usuarios', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home/solicitudes', pathMatch: 'full' },
 ];
 
 @NgModule({

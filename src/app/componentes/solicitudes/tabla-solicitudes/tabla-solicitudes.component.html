@@ -1,0 +1,94 @@
+<div
+  
+  class="container shadow-sm pt-4 pl-4 pr-4 mb-5 bg-white rounded"
+>
+  <form>
+    <div class="form-group form-inline">
+      Búsqueda:
+
+      <input
+        class="form-control ml-2"
+        type="text"
+        name="searchTerm"
+        
+      />
+      <span class="ml-3" 
+        >Loading...</span
+      >
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Tipo Solicitud</th>
+            <th scope="col">Fecha Actualización</th>
+            <th scope="col" *appRole="1">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Departamento</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Documentos</th>
+            <!-- <th scope="col" sortable="createdAt" (sort)="onSort($event)">Fecha Creación</th>-->
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            
+            class="click-table"
+          >
+            <th scope="row">
+              solicitud
+            </th>
+            <td>
+                ngb-highlight
+            </td>
+            <td>
+                ngb-highlight
+            </td>
+            <td *appRole="1">
+                ngb-highlight
+            </td>
+            <td>
+                ngb-highlight
+            </td>
+            <td>
+                ngb-highlight
+            </td>
+            <td>
+                ngb-highlight
+            </td>
+            <td>
+                ngb-highlight
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="d-flex justify-content-between p-2">
+        ngb-pagination
+
+      <select
+        class="custom-select"
+        style="width: auto"
+        name="pageSize"
+       
+      >
+        <option >2 solicitudes por página</option>
+        <option >4 solicitudes por página</option>
+        <option >6 solicitudes por página</option>
+      </select>
+    </div>
+  </form>
+</div>
+
+<div
+  
+  class="container shadow-sm pt-4 pl-4 pr-4 pb-3 mb-5 bg-white rounded"
+>
+  <p>
+    ngb-alert
+  </p>
+</div>
+
